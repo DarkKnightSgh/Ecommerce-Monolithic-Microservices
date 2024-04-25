@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <img className="helloimage" src="net.png" alt="net"></img>
+      <img className="helloimage" src="${process.env.PUBLIC_URL}/{net.png}" alt="net"></img>
       
       <div className="grid grid-cols-4 gap-4">
         {products.map((product) => (
