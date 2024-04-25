@@ -28,6 +28,7 @@ function App() {
       <Route path='home/info' element={<Info/>}/>
       <Route path='home/cart' element={<Cart/>}/>
       <Route path='home/cart/payment' element={<Payment/>}/>
+      <Route path='payment' element={<Payment/>}/>
     </Routes>
     
     

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Cart.css';
+import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [totalSum, setTotalSum] = useState(0);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
@@ -79,6 +80,9 @@ const CartPage = () => {
       </div>
       <div className="total-sum">
         <h3>Total: Rs.{totalSum}</h3>
+        <button className="paymentbutton" onClick={() => navigate('payment')} >
+          Proceed to payment
+          </button>
       </div>
     </div>
   );
