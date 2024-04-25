@@ -1,4 +1,4 @@
-# microservice-architecture-e-commerce-website
+# Microservice-architecture-e-commerce-website
 
 # running frontend seperately
 ```
